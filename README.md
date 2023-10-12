@@ -17,6 +17,5 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=mfy98&show_icons=true&locale=en&layout=compact" alt="mfy98" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=mfy98&show_icons=true&locale=en" alt="mfy98" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mfy98&" alt="mfy98" /></p>
