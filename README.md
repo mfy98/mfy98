@@ -20,4 +20,4 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mfy98&" alt="mfy98" /></p>
 
- ![Snake animation](https://github.com/mfy98/mfy98/blob/output/github-contribution-grid-snake.svg)
+ ![Snake animation](https://github.com/mfy98/mfy98/blob/output/github-contribution-grid-snake2.svg)
