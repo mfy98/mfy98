@@ -4,7 +4,7 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mfy98&label=Profile%20views&color=0e75b6&style=flat" alt="mfy98" /> </p>
 
 
-- 🔭 I’m currently working on **a MEAN Stack Project** using **NestJS**
+- 🔭 I’m currently working on **a Spring Boot Project**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
