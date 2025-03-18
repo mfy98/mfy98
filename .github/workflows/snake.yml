@@ -1,34 +1,32 @@
-name: Generate Snake Animation
+  name: Yılan Animasyonu Oluşturucu
 
-on:
-  # Her gün saat 00:00'da çalıştırmak için
-  schedule:
-    - cron: "0 0 * * *"
-  # Manuel olarak çalıştırmak için
-  workflow_dispatch:
+  on:
+    schedule:
+      # Her gün UTC 03:10'da çalıştırılır
+      - cron: '10 3 * * *'
+    workflow_dispatch:
 
-jobs:
-  build:
-    name: Generate Snake Animation and Deploy
-    runs-on: ubuntu-latest
-    steps:
-      # Depoyu klonlama
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        # Depoyu klonlama
+        - name: Depoyu Klonla
+          uses: actions/checkout@v3
 
-      # Yılan animasyonunu oluşturma
-      - name: Generate Snake Animation
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: mfy98
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
+        # Yılan animasyonunu oluşturma
+        - name: Yılan Animasyonunu Oluştur
+          uses: Platane/snk@v3
+          with:
+            github_user_name: mfy98
+            outputs: |
+              dist/github-snake.svg
 
-      # Oluşturulan animasyonu output dalına gönderme
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
-          publish_branch: output
+        # Oluşturulan animasyonu output dalına gönderme
+        - name: Animasyonu Yayınla
+          uses: crazy-max/ghaction-github-pages@v3.1.0
+          with:
+            target_branch: output
+            build_dir: dist
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
