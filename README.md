@@ -19,5 +19,9 @@
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mfy98&" alt="mfy98" /></p>
 
-![GitHub Snake Animation](https://github.com/mfy98/mfy98/raw/output/github-snake.svg)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/mfy98/mfy98/raw/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/mfy98/mfy98/raw/output/github-snake.svg" />
+  <img alt="GitHub Snake Animation" src="https://github.com/mfy98/mfy98/raw/output/github-snake.svg" />
+</picture>
 
